@@ -13,6 +13,7 @@ Module.register("MMM-Video", {
 		animationSpeed: 10,
 		initialLoadDelay: 875,
 		fadeSpeed: 7,
+		apiKey: "",
     rotateInterval: 5 * 1000
 	  },
 
