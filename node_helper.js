@@ -16,7 +16,7 @@ module.exports = NodeHelper.create({
 
     getVideo: function (url) {
          var self = this;
-          var url = "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=50&playlistId=UUtC-mqSNYsNCWefpSOviIQg&key=AIzaSyBw1asGhkxHxFf6JqyNrTqIeJ9sjMKFcX4";
+          var url = "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=50&playlistId=UUtC-mqSNYsNCWefpSOviIQg&key="+config.apiKey;
          request({ url: url, method: 'GET' }, function (error, response, body) {
              if (!error && response.statusCode == 200) {
 				 var result = JSON.parse(body);
